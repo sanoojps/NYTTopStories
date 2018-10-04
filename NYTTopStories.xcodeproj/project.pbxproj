@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D3B100CD2165071500FE4A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B100CC2165071400FE4A43 /* AppDelegate.swift */; };
-		D3B100CF2165071500FE4A43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B100CE2165071500FE4A43 /* ViewController.swift */; };
 		D3B100D22165071500FE4A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B100D02165071500FE4A43 /* Main.storyboard */; };
 		D3B100D52165071500FE4A43 /* NYTTopStories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3B100D32165071500FE4A43 /* NYTTopStories.xcdatamodeld */; };
 		D3B100D72165072A00FE4A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B100D62165072A00FE4A43 /* Assets.xcassets */; };
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		D3B100C92165071400FE4A43 /* NYTTopStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTTopStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B100CC2165071400FE4A43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3B100CE2165071500FE4A43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3B100D12165071500FE4A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3B100D42165071500FE4A43 /* NYTTopStories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NYTTopStories.xcdatamodel; sourceTree = "<group>"; };
 		D3B100D62165072A00FE4A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,22 +117,16 @@
 		D3B100CB2165071400FE4A43 /* NYTTopStories */ = {
 			isa = PBXGroup;
 			children = (
-				D3B1010F2165875C00FE4A43 /* NYTPlaceholder.png */,
-				D3B100CC2165071400FE4A43 /* AppDelegate.swift */,
-				D3B100CE2165071500FE4A43 /* ViewController.swift */,
-				D3B100FD21650A8900FE4A43 /* NetworkInteractionsManager.swift */,
-				D3B100D02165071500FE4A43 /* Main.storyboard */,
+				D3B101192165E7BF00FE4A43 /* AppDelegate */,
+				D3B101182165E7B400FE4A43 /* Constants */,
+				D3B101112165E6FA00FE4A43 /* NetworkManager */,
+				D3B101172165E79300FE4A43 /* StoryBoards */,
+				D3B101132165E73E00FE4A43 /* UI */,
 				D3B100D62165072A00FE4A43 /* Assets.xcassets */,
+				D3B1010F2165875C00FE4A43 /* NYTPlaceholder.png */,
 				D3B100D82165072A00FE4A43 /* LaunchScreen.storyboard */,
 				D3B100DB2165072A00FE4A43 /* Info.plist */,
 				D3B100D32165071500FE4A43 /* NYTTopStories.xcdatamodeld */,
-				D3B101012165106F00FE4A43 /* NYTAPIConstants.swift */,
-				D3B101032165511A00FE4A43 /* NYTTopStories.swift */,
-				D3B1010521655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift */,
-				D3B1010D2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift */,
-				D3B1010921655F8900FE4A43 /* NYTTopStoriesPresenter.swift */,
-				D3B1010721655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift */,
-				D3B1010B21657FF300FE4A43 /* NYTConstants.swift */,
 			);
 			path = NYTTopStories;
 			sourceTree = "<group>";
@@ -156,6 +148,83 @@
 				D3B100F12165072A00FE4A43 /* Info.plist */,
 			);
 			path = NYTTopStoriesUITests;
+			sourceTree = "<group>";
+		};
+		D3B101112165E6FA00FE4A43 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				D3B101122165E72000FE4A43 /* Model */,
+				D3B101012165106F00FE4A43 /* NYTAPIConstants.swift */,
+				D3B100FD21650A8900FE4A43 /* NetworkInteractionsManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		D3B101122165E72000FE4A43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3B101032165511A00FE4A43 /* NYTTopStories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3B101132165E73E00FE4A43 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D3B101142165E75100FE4A43 /* ListView */,
+				D3B101152165E75E00FE4A43 /* ListViewPresenter */,
+				D3B101162165E77500FE4A43 /* DetailsView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D3B101142165E75100FE4A43 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1010521655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift */,
+				D3B1010D2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		D3B101152165E75E00FE4A43 /* ListViewPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1010921655F8900FE4A43 /* NYTTopStoriesPresenter.swift */,
+			);
+			path = ListViewPresenter;
+			sourceTree = "<group>";
+		};
+		D3B101162165E77500FE4A43 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1010721655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		D3B101172165E79300FE4A43 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D3B100D02165071500FE4A43 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D3B101182165E7B400FE4A43 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D3B1010B21657FF300FE4A43 /* NYTConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D3B101192165E7BF00FE4A43 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D3B100CC2165071400FE4A43 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +362,6 @@
 				D3B101022165106F00FE4A43 /* NYTAPIConstants.swift in Sources */,
 				D3B100D52165071500FE4A43 /* NYTTopStories.xcdatamodeld in Sources */,
 				D3B1010621655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift in Sources */,
-				D3B100CF2165071500FE4A43 /* ViewController.swift in Sources */,
 				D3B101042165511A00FE4A43 /* NYTTopStories.swift in Sources */,
 				D3B100FE21650A8C00FE4A43 /* NetworkInteractionsManager.swift in Sources */,
 				D3B100CD2165071500FE4A43 /* AppDelegate.swift in Sources */,
