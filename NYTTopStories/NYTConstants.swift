@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit.UIImage
+import SafariServices
 
 protocol CQClassIdentifier
 {
@@ -231,4 +232,13 @@ extension NYTConstants
         
         
     }
+}
+
+extension NYTConstants {
+    
+    static func launchSafari(withUrl url: URL ,usingPresenter controller: UIViewController) {
+        let safari = SFSafariViewController.init(url: url)
+        controller.present(safari, animated: true, completion: nil)
+    }
+    
 }

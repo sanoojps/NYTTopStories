@@ -64,6 +64,13 @@ class NYTTopStoriesListDetailsViewController: UIViewController {
     }
     */
     @IBAction func onSeeMoreButtonTapped(_ sender: UIButton) {
+        guard let viewModel = self.viewModel,
+            let seeMoreURL = URL(string: viewModel.seeMoreUrl) else
+        {
+            return
+        }
+        
+        NYTConstants.launchSafari(withUrl: seeMoreURL, usingPresenter: self)
     }
     
 }

@@ -42,6 +42,12 @@ class NYTTopStoriesListTableViewController: UITableViewController {
         self.presenter?.detachPresenterView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView?.setNeedsDisplay()
+        self.tableView?.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

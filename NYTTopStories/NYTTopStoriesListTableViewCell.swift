@@ -30,6 +30,10 @@ struct NYTTopStoriesListTableViewCellViewModel:NYTTopStoriesListTableViewCellBas
 
 class NYTTopStoriesListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var largeImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -42,11 +46,11 @@ class NYTTopStoriesListTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        self.textLabel?.text =
+        self.titleLabel?.text =
         ""
-        self.detailTextLabel?.text =
+        self.descriptionLabel?.text =
         ""
-        self.imageView?.image =
+        self.largeImageView?.image =
         nil
     }
 
@@ -62,25 +66,24 @@ extension NYTTopStoriesListTableViewCell: NYTTopStoriesListTableViewCellConfigur
     
     func configure(cell: NYTTopStoriesListTableViewCell, withModel viewModel: NYTTopStoriesListTableViewCellViewModel) {
         
-        cell.textLabel?.text =
+        cell.titleLabel?.text =
         viewModel.title
         
-        cell.detailTextLabel?.text =
+        cell.descriptionLabel?.text =
         viewModel.author
         
-        guard let imageView = cell.imageView else {
+        guard let imageView = cell.largeImageView else {
             return
         }
     
-        self.imageView?.image =
+        self.largeImageView?.image =
             NYTConstants.nytPlaceHolderImage
         
         NYTConstants.assignImageFromUrl(
             viewModel.thumbNailImage,
             toView: imageView
         )
-        
-        cell.layoutIfNeeded()
+
     }
     
 }
