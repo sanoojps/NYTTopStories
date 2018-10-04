@@ -15,6 +15,16 @@
 		D3B100DA2165072A00FE4A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B100D82165072A00FE4A43 /* LaunchScreen.storyboard */; };
 		D3B100E52165072A00FE4A43 /* NYTTopStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B100E42165072A00FE4A43 /* NYTTopStoriesTests.swift */; };
 		D3B100F02165072A00FE4A43 /* NYTTopStoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B100EF2165072A00FE4A43 /* NYTTopStoriesUITests.swift */; };
+		D3B100FE21650A8C00FE4A43 /* NetworkInteractionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B100FD21650A8900FE4A43 /* NetworkInteractionsManager.swift */; };
+		D3B1010021650B1200FE4A43 /* NetworkInteractionsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B100FF21650B1200FE4A43 /* NetworkInteractionsManagerTests.swift */; };
+		D3B101022165106F00FE4A43 /* NYTAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B101012165106F00FE4A43 /* NYTAPIConstants.swift */; };
+		D3B101042165511A00FE4A43 /* NYTTopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B101032165511A00FE4A43 /* NYTTopStories.swift */; };
+		D3B1010621655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1010521655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift */; };
+		D3B1010821655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1010721655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift */; };
+		D3B1010A21655F8900FE4A43 /* NYTTopStoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1010921655F8900FE4A43 /* NYTTopStoriesPresenter.swift */; };
+		D3B1010C21657FF300FE4A43 /* NYTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1010B21657FF300FE4A43 /* NYTConstants.swift */; };
+		D3B1010E2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1010D2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift */; };
+		D3B101102165875D00FE4A43 /* NYTPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B1010F2165875C00FE4A43 /* NYTPlaceholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		D3B100EB2165072A00FE4A43 /* NYTTopStoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTTopStoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B100EF2165072A00FE4A43 /* NYTTopStoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesUITests.swift; sourceTree = "<group>"; };
 		D3B100F12165072A00FE4A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B100FD21650A8900FE4A43 /* NetworkInteractionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInteractionsManager.swift; sourceTree = "<group>"; };
+		D3B100FF21650B1200FE4A43 /* NetworkInteractionsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInteractionsManagerTests.swift; sourceTree = "<group>"; };
+		D3B101012165106F00FE4A43 /* NYTAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTAPIConstants.swift; sourceTree = "<group>"; };
+		D3B101032165511A00FE4A43 /* NYTTopStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStories.swift; sourceTree = "<group>"; };
+		D3B1010521655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesListTableViewController.swift; sourceTree = "<group>"; };
+		D3B1010721655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesListDetailsViewController.swift; sourceTree = "<group>"; };
+		D3B1010921655F8900FE4A43 /* NYTTopStoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesPresenter.swift; sourceTree = "<group>"; };
+		D3B1010B21657FF300FE4A43 /* NYTConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTConstants.swift; sourceTree = "<group>"; };
+		D3B1010D2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTopStoriesListTableViewCell.swift; sourceTree = "<group>"; };
+		D3B1010F2165875C00FE4A43 /* NYTPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NYTPlaceholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,22 @@
 		D3B100CB2165071400FE4A43 /* NYTTopStories */ = {
 			isa = PBXGroup;
 			children = (
+				D3B1010F2165875C00FE4A43 /* NYTPlaceholder.png */,
 				D3B100CC2165071400FE4A43 /* AppDelegate.swift */,
 				D3B100CE2165071500FE4A43 /* ViewController.swift */,
+				D3B100FD21650A8900FE4A43 /* NetworkInteractionsManager.swift */,
 				D3B100D02165071500FE4A43 /* Main.storyboard */,
 				D3B100D62165072A00FE4A43 /* Assets.xcassets */,
 				D3B100D82165072A00FE4A43 /* LaunchScreen.storyboard */,
 				D3B100DB2165072A00FE4A43 /* Info.plist */,
 				D3B100D32165071500FE4A43 /* NYTTopStories.xcdatamodeld */,
+				D3B101012165106F00FE4A43 /* NYTAPIConstants.swift */,
+				D3B101032165511A00FE4A43 /* NYTTopStories.swift */,
+				D3B1010521655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift */,
+				D3B1010D2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift */,
+				D3B1010921655F8900FE4A43 /* NYTTopStoriesPresenter.swift */,
+				D3B1010721655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift */,
+				D3B1010B21657FF300FE4A43 /* NYTConstants.swift */,
 			);
 			path = NYTTopStories;
 			sourceTree = "<group>";
@@ -113,6 +142,7 @@
 		D3B100E32165072A00FE4A43 /* NYTTopStoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				D3B100FF21650B1200FE4A43 /* NetworkInteractionsManagerTests.swift */,
 				D3B100E42165072A00FE4A43 /* NYTTopStoriesTests.swift */,
 				D3B100E62165072A00FE4A43 /* Info.plist */,
 			);
@@ -235,6 +265,7 @@
 				D3B100DA2165072A00FE4A43 /* LaunchScreen.storyboard in Resources */,
 				D3B100D72165072A00FE4A43 /* Assets.xcassets in Resources */,
 				D3B100D22165071500FE4A43 /* Main.storyboard in Resources */,
+				D3B101102165875D00FE4A43 /* NYTPlaceholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B101022165106F00FE4A43 /* NYTAPIConstants.swift in Sources */,
 				D3B100D52165071500FE4A43 /* NYTTopStories.xcdatamodeld in Sources */,
+				D3B1010621655DDC00FE4A43 /* NYTTopStoriesListTableViewController.swift in Sources */,
 				D3B100CF2165071500FE4A43 /* ViewController.swift in Sources */,
+				D3B101042165511A00FE4A43 /* NYTTopStories.swift in Sources */,
+				D3B100FE21650A8C00FE4A43 /* NetworkInteractionsManager.swift in Sources */,
 				D3B100CD2165071500FE4A43 /* AppDelegate.swift in Sources */,
+				D3B1010C21657FF300FE4A43 /* NYTConstants.swift in Sources */,
+				D3B1010821655EEB00FE4A43 /* NYTTopStoriesListDetailsViewController.swift in Sources */,
+				D3B1010E2165808A00FE4A43 /* NYTTopStoriesListTableViewCell.swift in Sources */,
+				D3B1010A21655F8900FE4A43 /* NYTTopStoriesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B100E52165072A00FE4A43 /* NYTTopStoriesTests.swift in Sources */,
+				D3B1010021650B1200FE4A43 /* NetworkInteractionsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
