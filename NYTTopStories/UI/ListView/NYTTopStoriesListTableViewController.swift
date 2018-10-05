@@ -14,6 +14,11 @@ class NYTTopStoriesListTableViewController: UITableViewController {
     
     var viewModels: [NYTTopStoriesListViewModel] = []
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask
+    {
+        return .all
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
