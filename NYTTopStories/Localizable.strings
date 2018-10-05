@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  NYTTopStories
+
+  Created by Sanooj on 05/10/2018.
+  Copyright © 2018 Sanooj. All rights reserved.
+*/
+
+"INVALID_URL_ALERT_TITLE" = "Invalid URL";
+"JSON_PARSING_FAILURE_ALERT_TITLE" = "Failed to parse JSON";
+"NETWORK_REQUEST_FAILURE_ALERT_TITLE" = "Network Request Failed";
+"OK_BUTTON_TITLE" = "OK";
+

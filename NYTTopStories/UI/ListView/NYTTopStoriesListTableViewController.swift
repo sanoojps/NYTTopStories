@@ -155,12 +155,27 @@ extension NYTTopStoriesListTableViewController : NYTTopStoriesPresenterViewInter
         switch error {
             
         case .invalidURL  :
+            NYTConstants.presentAnAlert(
+                title: NYTConstants.LocalizableKeys.invalidURLAlertTitle.localized,
+                message: nil,
+                presenter: self
+            )
             break
             
         case .jsonParsingFailed:
+            NYTConstants.presentAnAlert(
+                title: NYTConstants.LocalizableKeys.jsonParsingFailureAlertTitle.localized,
+                message: nil,
+                presenter: self
+            )
             break
             
         case .requestFailed:
+            NYTConstants.presentAnAlert(
+                title: NYTConstants.LocalizableKeys.networkRequestFailureAlertTitle.localized,
+                message: nil,
+                presenter: self
+            )
             break
             
         }

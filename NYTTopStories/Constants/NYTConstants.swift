@@ -9,6 +9,7 @@
 import Foundation
 import UIKit.UIImage
 import SafariServices
+import UIKit.UIAlertController
 
 protocol CQClassIdentifier
 {
@@ -239,6 +240,57 @@ extension NYTConstants {
     static func launchSafari(withUrl url: URL ,usingPresenter controller: UIViewController) {
         let safari = SFSafariViewController.init(url: url)
         controller.present(safari, animated: true, completion: nil)
+    }
+    
+}
+
+extension NYTConstants {
+    
+    static func presentAnAlert(title: String, message: String?, presenter: UIViewController)
+    {
+        let alertView = UIAlertController.init(
+            title: title, message: message, preferredStyle: UIAlertController.Style.alert
+        )
+        
+        let alertOKAction =
+            UIAlertAction.init(
+            title: NYTConstants.LocalizableKeys.okButtonTitle.localized,
+            style: UIAlertAction.Style.cancel
+            ) { (alertAction:UIAlertAction) in
+            
+            print(alertAction.style)
+        }
+        
+        alertView.addAction(alertOKAction)
+        
+        presenter.present(alertView, animated: true) {
+            print("Alert View Presented")
+        }
+    }
+}
+
+//MARK: Localization Helper
+extension String
+{
+    var localized: String
+    {
+        return NSLocalizedString(
+            self,
+            comment: ""
+        )
+    }
+}
+
+extension NYTConstants {
+    
+    struct LocalizableKeys
+    {
+        private init() {}
+        
+        static let invalidURLAlertTitle = "INVALID_URL_ALERT_TITLE"
+        static let jsonParsingFailureAlertTitle = "JSON_PARSING_FAILURE_ALERT_TITLE"
+        static let networkRequestFailureAlertTitle = "NETWORK_REQUEST_FAILURE_ALERT_TITLE"
+        static let okButtonTitle = "OK_BUTTON_TITLE"
     }
     
 }
